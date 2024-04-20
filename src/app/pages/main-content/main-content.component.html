@@ -1,0 +1,17 @@
+<div class="row position-relative">
+    <div class="col-md-2_5"><app-sidebar-menu></app-sidebar-menu></div>
+    <div class="col-md-8">
+        <!-- Swiper banner -->
+        <div class="container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let image of images">
+                    <img [src]="image.src" alt="{{ image.name }}">
+                    <div class="swiper-slide-info">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+h4 {
+  line-height: 1rem;
+  margin-bottom: 26px;
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: 550;
+  margin-bottom: 26px;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.underline-footer {
+  border-bottom: 1px solid #828282;
+}
+
+.input-sendmail {
+  position: relative;
+  background-color: transparent; /* Loại bỏ màu nền của nút input */
+  padding-right: 40px;
+  border-radius: 0.275rem !important;
+  color: #646464;
+  border: 2px solid white;
+}
+
+.input-sendmail::placeholder {
+  color: #646464;
+}
+
+.input-sendmail:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+.input-sendmail:focus::placeholder {
+  /* Ẩn placeholder khi input được focus */
+  color: transparent;
+}
+
+.btn-sendmail {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: white;
+  z-index: 999999;
+  background-color: transparent; /* Loại bỏ màu nền của nút input */
+  margin-top: 0.1em;
+}
+
+.btn-sendmail:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-sendmail:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-social {
+  font-size: 25px;
+  color: white;
+}
+
+.icon-social:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.img-qr {
+  max-width: 80px;
+}
+
+.img-app {
+  width: 110px;
+  margin-left: 0.5em;
+}
+
+.fontsize-subApp {
+  font-size: 13px;
+}
+
+.footer-copyright {
+  padding-top: 16px;
+  border-top: 1px solid #3d3d3d;
+  color: #3d3d3d;
+}

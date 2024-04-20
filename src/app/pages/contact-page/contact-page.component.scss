@@ -1,0 +1,42 @@
+.border-card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5em;
+}
+
+.iconContact {
+  font-size: 26px;
+  color: red;
+}
+
+.card-Contact {
+  line-height: 42px;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.border-underline {
+  border-bottom: 1px solid black;
+}
+.input-short {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+.textarea-border {
+  border-radius: 0.375rem;
+  resize: none;
+  background-color: #f5f5f5;
+  border: none;
+  padding: 1rem 5rem 1rem 1rem;
+}
+.btn-contact {
+  background-color: #db4444;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  color: #fff;
+}

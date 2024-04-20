@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Box-sizing */
+html {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Margin and Padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./assets/font/static/Inter-Black.ttf") format("inter");
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Sử dụng font mới */
+}
+
+// Change Autocomplete Styles in WebKit Browsers
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #646464;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: #646464; /* Đổi màu dấu nhấp nháy kjhi auto fill */
+}
+
+.padding-header {
+  padding-top: 5rem;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
+@import "swiper/swiper-bundle.css";

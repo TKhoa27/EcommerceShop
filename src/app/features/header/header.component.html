@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg fixed-top margin-space-saleoff navbar-light under-line-nav height-header">
+    <div class="container mt-2">
+        <div class="col-md-2 m-3 me-3">
+            <a class="navbar-brand fontWeight-bold" href="">Exclusive</a>
+        </div>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse justify-content-center " id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item me-4 ms-4" *ngFor="let item of menuItems; let i = index"
+                    [ngClass]="{'borderBottom-active' : i === selectedItem}">
+                    <a class="nav-link nav-paddingbottom" [routerLink]="urlKeyword"
+                        (click)="selectMenuItems($event,i)">{{item}}</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="col-md-3 me-3">
+            <div class="input-group search">
+                <input type="text" class="form-control input-search" placeholder="What are you looking for?">
+                <button class="btn search-color btn-search" type="button"><i class="bi bi-search "></i></button>
+            </div>
+        </div>
+
+
+        <div class="col-md-1 d-flex justify-content-center ">
+            <ul class="navbar-nav">
+                <li class="nav-item margin-icon-heart">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-heart nav-size-icon-heart"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-cart3 nav-size-icon-cart"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>

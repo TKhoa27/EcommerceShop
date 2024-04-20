@@ -1,0 +1,77 @@
+<div class="container padding-header">
+    <p class="mt-5 mb-5">Home / About</p>
+    <!-- Our Story and Image -->
+    <div class="row pb-5 mb-5 our-story">
+        <div class="d-flex flex-column justify-content-center col-md-5 pe-4 our-storyContent">
+            <p class="mb-5 content-bigSize">Our Story</p>
+            <p class="mb-3">
+                Launced in 2015, Exclusive is South Asia's premier online shopping makterplace with an active presense
+                in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has
+                10,500 sallers and 300 brands and serves 3 millioons customers across the region.
+            </p>
+            <p> Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse
+                assotment in categories ranging from consumer.
+            </p>
+
+        </div>
+        <div class="d-flex col-md-6 ps-3 ms-5 image-story">
+            <img src="../../../assets/image/about/Side Image.png" alt="imageStory" style="width: 700px; height: 600px;">
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="d-flex pt-5 mt-5 pb-5 mb-5 extent">
+        <div class="col-md-3 Saller">
+            <img src="../../../assets/image/about/Frame 870.png" alt="Saller">
+        </div>
+
+        <div class=" col-md-3 Mopnthly">
+            <img src="../../../assets/image/about/Frame 871.png" alt="Mopnthly">
+        </div>
+
+        <div class=" col-md-3 Customer">
+            <img src="../../../assets/image/about/Frame 872.png" alt="Customer">
+        </div>
+
+        <div class="col-md-3 Anual">
+            <img src="../../../assets/image/about/Frame 873.png" alt="Anual">
+        </div>
+    </div>
+
+    <!-- Slide Image -->
+    <div class="swiper mySwiper mb-5 pt-5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let image of images">
+                <img [src]="image.src" alt="{{ image.name }}">
+                <div class="swiper-slide-info">
+                    <h3>{{ image.name }}</h3>
+                    <p>{{ image.title }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Policy -->
+    <div class="d-flex justify-content-center services mb-5 pb-5 pt-4 me-5">
+        <div class="d-flex flex-column align-items-center me-5 ms-5">
+            <img src="../../../assets/image/about/Services.png" alt="" class="img-services">
+            <p class="text-services">FREE AND FAST DELIVERY</p>
+            <p>Free delivery for all orders over $140</p>
+        </div>
+        <div class="d-flex flex-column align-items-center me-5 ms-5">
+            <img src="../../../assets/image/about/Services (1).png" alt="" class="img-services">
+            <p class="text-services">24/7 CUSTOMER SERVICE
+            </p>
+            <p>Friendly 24/7 customer support</p>
+        </div>
+        <div class="d-flex flex-column align-items-center me-5 ms-5">
+            <img src="../../../assets/image/about/Services (2).png" alt="" class="img-services">
+            <p class="text-services">MONEY BACK GUARANTEE
+            </p>
+            <p> We return money within 30 days</p>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,44 @@
+a {
+  color: black;
+}
+
+.margin-top80 {
+  margin-top: 6rem;
+}
+
+.border-sidebar {
+  border-right: 1px solid #c6c6c6;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 2rem;
+}
+
+.submenu {
+  position: absolute;
+  min-width: 160px;
+  height: 17rem;
+  margin-left: 16.6rem;
+  top: 6rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 99999;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+}
+
+.sidebar .submenu {
+  display: none;
+}
+
+.sidebar .nav-item {
+  transition: background-color 0.5s;
+  border-radius: 10px;
+}
+
+.sidebar .nav-item:hover .submenu {
+  display: block;
+}
+
+.sidebar .nav-item:hover {
+  background-color: #c6c6c6;
+}
+
