@@ -1,0 +1,32 @@
+<div class="d-flex">
+    <div class="ms-3 me-3">
+        <p class="textTime">Days</p>
+        <div class="d-flex">
+            <p class="countdownTime">{{ days < 10 ? '0' + days : days }} </p>
+                    <span>:</span>
+        </div>
+    </div>
+
+    <div class="ms-3 me-3">
+        <p class="textTime">Hours</p>
+        <div class="d-flex">
+            <p class="countdownTime">{{ hours }} </p>
+            <span>:</span>
+        </div>
+
+    </div>
+
+    <div class="ms-3 me-3">
+        <p class="textTime">Minutes</p>
+        <div class="d-flex">
+            <p class="countdownTime me-2">{{ minutes }} </p>
+            <span>:</span>
+        </div>
+
+    </div>
+
+    <div class="ms-3 me-3">
+        <p class="textTime">Seconds</p>
+        <p class="countdownTime">{{ seconds }} </p>
+    </div>
+</div>

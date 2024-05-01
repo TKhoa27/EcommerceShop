@@ -9,18 +9,19 @@ import Swiper from 'swiper';
 export class MainContentComponent implements AfterViewInit {
 
   images: { src: string, name: string }[] = [
-    { src: '../../../assets/image/about/Frame 560.png', name: 'Tom Cruise' },
-    { src: '../../../assets/image/about/Frame 560.png', name: 'Emma Watson' },
+    { src: '../../../assets/image/about/Banner IP.png', name: 'Tom Cruise' },
+    { src: '../../../assets/image/about/banner samsung.png', name: 'Emma Watson' },
+    { src: '../../../assets/image/about/banner woting.png', name: 'Emma Watson' },
   ];
 
   constructor() { }
 
   ngAfterViewInit(): void {
-    new Swiper(".mySwiper", {
+    new Swiper("#swiper-banner", {
       slidesPerView: 1,
       spaceBetween: 30,
       autoplay: {
-        delay: 100000, // Đặt thời gian mỗi slide hiển thị 
+        delay: 5000, // Đặt thời gian mỗi slide hiển thị 
         disableOnInteraction: false // Tắt tự động chuyển slide khi người dùng tương tác với Swiper
       },
       pagination: {

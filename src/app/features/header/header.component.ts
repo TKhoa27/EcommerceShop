@@ -21,7 +21,6 @@ export class HeaderComponent implements OnInit {
     event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
     this.selectedItem = index; // Cập nhật phần tử được chọn
     let item = this.menuItems[index];
-
     this.urlKeyword = '/' + item.toLowerCase().replace(/\s/g, '');
     this.router.navigate([this.urlKeyword]);
   }

@@ -1,0 +1,28 @@
+<div class="container mt-4 mb-5 pt-4 pb-5 border-bottom">
+    <div class="title-categories">
+        <h5>Categories</h5>
+    </div>
+
+    <!-- Swiper  -->
+    <div class="d-flex ">
+        <h2 class="me-5 col-md-10">Browse By Category</h2>
+        <div class="btn-navigation col-md-1 position-relative">
+            <div class="swiper-button-next" id="btn-next-categories"></div>
+            <div class="swiper-button-prev" id="btn-prev-categories"></div>
+        </div>
+    </div>
+
+    <!-- Slider Categories -->
+    <div class="div mt-4 mb-4">
+        <div class="container swiper " id="swiper-categories">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide " *ngFor="let image of images">
+                    <a href="">
+                        <img [src]="image.src" alt="{{ image.name }}" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

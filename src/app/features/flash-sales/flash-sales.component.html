@@ -1,0 +1,42 @@
+<div class="container mt-5 mb-5 pt-5 pb-5 border-bottom">
+    <div class="title-flashsale">
+        <h5>Today's</h5>
+    </div>
+
+    <!-- Timer -->
+    <div class="row d-flex">
+        <h2 class="col-md-2 me-5">Flash Sales</h2>
+        <div class="col-md-8">
+            <app-countdown></app-countdown>
+
+        </div>
+        <div class="btn-navigation col-md-1 position-relative">
+            <div class="swiper-button-next" id="btn-next-flashsale"></div>
+            <div class="swiper-button-prev" id="btn-prev-flashsale"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Slider flash sale -->
+    <div class="div mt-4">
+        <div class="container swiper " id="swiper-flashsale">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide " *ngFor="let image of images">
+                    <a href="" class="card">
+                        <img [src]="image.src" alt="{{ image.name }}" loading="lazy">
+                        <div class="swiper-slide-info card-body">
+                            <h5 class="card-title">Card Name</h5>
+                            <p class="card-text">price</p>
+                            <p class="card-text">rating and star</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 d-flex justify-content-center btn-allProduct">
+        <button>View All Products</button>
+    </div>
+</div>

@@ -11,7 +11,14 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { SigninPageComponent } from './pages/signin-page/signin-page.component';
 import { SidebarMenuComponent } from './features/sidebar-menu/sidebar-menu.component';
-import { MainContentComponent } from './pages/main-content/main-content.component';
+import { MainContentComponent } from './features/main-content/main-content.component';
+import { FlashSalesComponent } from './features/flash-sales/flash-sales.component';
+import { PolicyComponent } from './features/policy/policy.component';
+import { CountdownComponent } from './features/countdown/countdown.component';
+import { CategoriesComponent } from './features/categories/categories.component';
+import { BestSellingComponent } from './features/best-selling/best-selling.component';
+import { OurProductsComponent } from './features/our-products/our-products.component';
+import { FeaturedComponent } from './features/featured/featured.component';
 
 
 @NgModule({
@@ -25,6 +32,13 @@ import { MainContentComponent } from './pages/main-content/main-content.componen
     SigninPageComponent,
     SidebarMenuComponent,
     MainContentComponent,
+    FlashSalesComponent,
+    PolicyComponent,
+    CountdownComponent,
+    CategoriesComponent,
+    BestSellingComponent,
+    OurProductsComponent,
+    FeaturedComponent,
   ],
   imports: [
     BrowserModule,
